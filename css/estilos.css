@@ -1,10 +1,10 @@
 body {
-  background-image: url(/imagenes/FondoWeb.jpg);
+  background-image: url(/Repositorio/imagenes/FondoWeb.jpg);
   width: 80%; }
 
 @font-face {
   font-family: "OriginTech personal use";
-  src: url("/Fuentes/OriginTech personal use.ttf"); }
+  src: url("/Repositorio/Fuentes/OriginTech\ personal\ use.ttf"); }
 
 /*Estilo del Encabezado y la Navbar*/
 .Encabezado {
@@ -62,7 +62,8 @@ body {
 /*Estilo para la seccion Procesadores*/
 .Procesadores {
   display: grid;
-  grid-template-areas: "SeccionUno SeccionDos" "SeccionUno SeccionDos";
+  grid-template-areas: "SeccionUno SeccionDos"
+ "SeccionUno SeccionDos";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content;
   justify-items: center; }
