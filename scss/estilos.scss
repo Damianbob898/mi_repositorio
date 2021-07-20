@@ -1,0 +1,217 @@
+body{
+    background-image: url(/imagenes/FondoWeb.jpg);
+    width:80%;
+}
+
+@font-face {
+    font-family: "OriginTech personal use" ;
+    src: url("/Fuentes/OriginTech\ personal\ use.ttf");
+}
+@mixin tranform{
+    font-size: 20px;
+    color: rgb(184, 178, 178);
+}
+
+/*Estilo del Encabezado y la Navbar*/
+.Encabezado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #211D26;
+    justify-content:space-evenly ;
+    
+    &__Nav{
+        width: 100%;
+    }
+        &__Enlaces{
+    
+            margin-left:40px ; 
+            padding: 0; 
+            list-style: none;
+        }
+
+        &__Li{ 
+            display:inline-block ;
+            
+        }
+
+        &__A{
+            color: blanchedalmond; 
+            text-decoration: none; 
+            font-family: "OriginTech personal use";
+            padding-left: 15px;
+        }
+        &__A:hover{
+            color: red;
+        }
+    
+}
+/*Estilo de la Main para el Index*/
+.Main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 30px;
+
+    &__Subtitulo{
+        font-family: "OriginTech personal use";
+        color: darkgrey;
+        font-size: 50px;
+    }
+    &__Parrafo{
+        color:rgb(105, 182, 182) ;
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+/*Estilo de la Main para la seccion Galeria*/
+.MainGaleria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__Subtitulo{
+        @extend .Main__Subtitulo
+    }
+    &__SubtituloDos{
+        font-family:"OriginTech personal use" ; 
+        color: darkgrey;
+    }
+    &__Carrusel{
+        width: 40%;
+    }
+    &__Img{
+        width: 15%;
+    }
+    &__Img:hover{
+        transform: scale(1.5,1.5);
+    }
+
+}
+
+/*Estilo para la seccion Procesadores*/
+.Procesadores{
+    display: grid;
+    grid-template-areas: 
+    "SeccionUno SeccionDos"
+    "SeccionUno SeccionDos"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    justify-items: center;
+    
+        &__SubtituloUno{
+            @extend .Main__Subtitulo
+        }
+        &__SubtituloDos{
+            font-family: 'Aldrich', sans-serif; 
+            color: darkgrey;
+        }
+
+    &__Tabla{
+        color: rgb(184, 178, 178);
+    }
+
+        &__SubtituloTres{
+            @extend .Main__Subtitulo
+        }
+        &__Parrafo{
+            color:rgb(184, 178, 178) ;
+            font-size: 20px;
+            font-family: "OriginTech personal use";
+        }
+}
+/*Estilo de Seccion Placas*/
+.MainPlacas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    &__Titulo{
+        font-family:"OriginTech personal use" ; 
+        color: darkgrey;
+        font-size: 60px;
+        margin-left: 32%;
+    }
+    &__TituloDos{
+        font-family:"OriginTech personal use" ; 
+        color: darkgrey;
+        font-size: 40px;
+        margin-left: 25%;
+    }
+    &__SubtituloUno{
+        font-family: "OriginTech personal use";
+        color: rgb(184, 178, 178);
+        font-size: 20px;
+        margin-left: 15%;
+    }
+    &__SubtituloDos{
+        font-family: "OriginTech personal use";
+        @include tranform();
+        margin-left: 15%;
+        
+    }
+    &__Parrafo{
+        font-family: 'Aldrich', sans-serif; 
+        color: darkgrey;
+        text-align: justify;
+        margin-left: 30px;
+        
+    }
+    &__SeccionUnoImg{
+        margin-left: 10%;
+    }  
+}
+/*Estilo para seccion Contactos*/
+.MainContactos{
+    &__Carrusel{
+        width: 50%;
+        display: list-item;
+        margin-left: 40%;
+    }
+    &__Titulo{
+        margin-left: 40%;
+        @extend .MainPlacas__TituloDos
+    }
+    &__input{
+        width: 300px;
+        display: list-item;
+        
+    }
+    &__label{
+        @extend .MainGaleria__SubtituloDos
+    }
+    &__CheckBoton{
+        color: rgb(184, 178, 178);
+    }
+}
+
+/*Estilo del Pie de Pagina*/
+.Footer{
+    display:flex;
+    flex-direction:row;
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    justify-content: left;
+    margin: 4px;
+
+    &__Enlaces{
+        list-style: none;
+        
+    }
+    &__ItemLista{
+            color: blanchedalmond;
+        }
+    &__TituloLista{
+        color: blanchedalmond;
+    }
+    &__SobreNosotros{
+        list-style: none;
+        bottom: 1px;
+    }
+    &__TituloSN{
+        color:blanchedalmond;
+    }
+    &__ItemListaSN{
+        color: blanchedalmond;
+    }
+}

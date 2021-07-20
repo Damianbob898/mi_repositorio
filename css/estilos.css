@@ -1,0 +1,149 @@
+body {
+  background-image: url(/imagenes/FondoWeb.jpg);
+  width: 80%; }
+
+@font-face {
+  font-family: "OriginTech personal use";
+  src: url("/Fuentes/OriginTech personal use.ttf"); }
+
+/*Estilo del Encabezado y la Navbar*/
+.Encabezado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #211D26;
+  justify-content: space-evenly; }
+  .Encabezado__Nav {
+    width: 100%; }
+  .Encabezado__Enlaces {
+    margin-left: 40px;
+    padding: 0;
+    list-style: none; }
+  .Encabezado__Li {
+    display: inline-block; }
+  .Encabezado__A {
+    color: blanchedalmond;
+    text-decoration: none;
+    font-family: "OriginTech personal use";
+    padding-left: 15px; }
+  .Encabezado__A:hover {
+    color: red; }
+
+/*Estilo de la Main para el Index*/
+.Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: 30px; }
+  .Main__Subtitulo, .MainGaleria__Subtitulo, .Procesadores__SubtituloUno, .Procesadores__SubtituloTres {
+    font-family: "OriginTech personal use";
+    color: darkgrey;
+    font-size: 50px; }
+  .Main__Parrafo {
+    color: #69b6b6;
+    font-size: 20px;
+    text-align: justify; }
+
+/*Estilo de la Main para la seccion Galeria*/
+.MainGaleria {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .MainGaleria__SubtituloDos, .MainContactos__label {
+    font-family: "OriginTech personal use";
+    color: darkgrey; }
+  .MainGaleria__Carrusel {
+    width: 40%; }
+  .MainGaleria__Img {
+    width: 15%; }
+  .MainGaleria__Img:hover {
+    transform: scale(1.5, 1.5); }
+
+/*Estilo para la seccion Procesadores*/
+.Procesadores {
+  display: grid;
+  grid-template-areas: "SeccionUno SeccionDos" "SeccionUno SeccionDos";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content;
+  justify-items: center; }
+  .Procesadores__SubtituloDos {
+    font-family: 'Aldrich', sans-serif;
+    color: darkgrey; }
+  .Procesadores__Tabla {
+    color: #b8b2b2; }
+  .Procesadores__Parrafo {
+    color: #b8b2b2;
+    font-size: 20px;
+    font-family: "OriginTech personal use"; }
+
+/*Estilo de Seccion Placas*/
+.MainPlacas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center; }
+  .MainPlacas__Titulo {
+    font-family: "OriginTech personal use";
+    color: darkgrey;
+    font-size: 60px;
+    margin-left: 32%; }
+  .MainPlacas__TituloDos, .MainContactos__Titulo {
+    font-family: "OriginTech personal use";
+    color: darkgrey;
+    font-size: 40px;
+    margin-left: 25%; }
+  .MainPlacas__SubtituloUno {
+    font-family: "OriginTech personal use";
+    color: #b8b2b2;
+    font-size: 20px;
+    margin-left: 15%; }
+  .MainPlacas__SubtituloDos {
+    font-family: "OriginTech personal use";
+    font-size: 20px;
+    color: #b8b2b2;
+    margin-left: 15%; }
+  .MainPlacas__Parrafo {
+    font-family: 'Aldrich', sans-serif;
+    color: darkgrey;
+    text-align: justify;
+    margin-left: 30px; }
+  .MainPlacas__SeccionUnoImg {
+    margin-left: 10%; }
+
+/*Estilo para seccion Contactos*/
+.MainContactos__Carrusel {
+  width: 50%;
+  display: list-item;
+  margin-left: 40%; }
+
+.MainContactos__Titulo {
+  margin-left: 40%; }
+
+.MainContactos__input {
+  width: 300px;
+  display: list-item; }
+
+.MainContactos__CheckBoton {
+  color: #b8b2b2; }
+
+/*Estilo del Pie de Pagina*/
+.Footer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  justify-content: left;
+  margin: 4px; }
+  .Footer__Enlaces {
+    list-style: none; }
+  .Footer__ItemLista {
+    color: blanchedalmond; }
+  .Footer__TituloLista {
+    color: blanchedalmond; }
+  .Footer__SobreNosotros {
+    list-style: none;
+    bottom: 1px; }
+  .Footer__TituloSN {
+    color: blanchedalmond; }
+  .Footer__ItemListaSN {
+    color: blanchedalmond; }
