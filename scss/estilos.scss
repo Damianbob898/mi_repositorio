@@ -1,11 +1,11 @@
 body{
-    background-image: url(/imagenes/FondoWeb.jpg);
-    width:80%;
+    background-image: url(/Repositorio/imagenes/FondoWeb.jpg);
+    width:100%;
 }
 
 @font-face {
     font-family: "OriginTech personal use" ;
-    src: url("/Fuentes/OriginTech\ personal\ use.ttf");
+    src: url("/Repositorio/Fuentes/OriginTech\ personal\ use.ttf");
 }
 @mixin tranform{
     font-size: 20px;
@@ -77,7 +77,7 @@ body{
         color: darkgrey;
     }
     &__Carrusel{
-        width: 40%;
+        width: 35%;
     }
     &__Img{
         width: 15%;
@@ -186,9 +186,8 @@ body{
 
 /*Estilo del Pie de Pagina*/
 .Footer{
-    display:flex;
-    flex-direction:row;
-    position: absolute;
+    display: flex;
+    position: relative;
     bottom: 1px;
     width: 100%;
     justify-content: left;
@@ -215,3 +214,222 @@ body{
         color: blanchedalmond;
     }
 }
+/*Estilo para celulares*/
+@media screen and ( max-width: 600px)
+{
+    //Estilo para el main index
+    .Main{
+        display: flex;
+        flex-direction: column;
+
+        &__Video{
+            width: 100%;
+        }
+    
+        &__Subtitulo{
+            font-family: "OriginTech personal use";
+            color: darkgrey;
+            font-size: 25px;
+        }
+        &__Parrafo{
+            color:rgb(105, 182, 182) ;
+            font-size: 100%;
+            text-align: justify;
+        }
+    }
+    //Estilo para la navbar
+    .Encabezado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #211D26;
+        justify-content:space-evenly ;
+        
+        &__Img{
+            width: 100%;
+        }
+        &__Nav{
+            width: 100%;
+        }
+            &__Enlaces{
+        
+                margin-left:40px ; 
+                padding: 0; 
+                list-style: none;
+            }
+    
+            &__Li{ 
+                display:inline-block ;
+                
+            }
+    
+            &__A{
+                color: blanchedalmond; 
+                text-decoration: none; 
+                font-family: "OriginTech personal use";
+                padding-left: 15px;
+            }
+            &__A:hover{
+                color: red;
+            }
+        
+    }
+//Estilo footer
+.Footer{
+    display: grid;
+    position: relative;
+    width: 100%;
+    &__Enlaces{
+        list-style: none;
+    
+    }
+    &__ItemLista{
+            color: blanchedalmond;
+            font-size: 10px;
+        }
+    &__TituloLista{
+        color: blanchedalmond;
+        font-size: 15px;
+    }
+    &__SobreNosotros{
+        list-style: none;
+        
+    }
+    &__TituloSN{
+        color:blanchedalmond;
+        font-size: 15px;
+    }
+    &__ItemListaSN{
+        color: blanchedalmond;
+        font-size: 10px;
+    }
+}
+//Estilo para la main galeria
+.MainGaleria{
+    display: flex;
+    flex-direction: column;
+
+    &__Subtitulo{
+        width: 100%;
+        font-size: 30px;
+    }
+    &__SubtituloDos{
+        font-family:"OriginTech personal use" ; 
+        color: darkgrey;
+        width: 100%;
+        font-size: 25px;
+    }
+    &__Carrusel{
+        width: 80%;
+    }
+    &__SeccionImg{
+        align-items: center;
+    }
+    &__Img{
+        width: 75%;
+    }
+    &__Img:hover{
+        transform: scale(1.5,1.5);
+    }
+}
+
+.Procesadores{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+        &__SubtituloUno{
+            width: 100%;
+        }
+        &__SubtituloDos{
+            font-family: 'Aldrich', sans-serif; 
+            color: darkgrey;
+        }
+
+    &__Tabla{
+        color: rgb(184, 178, 178);
+        width: 100%;
+    }
+
+        &__SubtituloTres{
+            width: 100%;
+            font-size: 30px;
+        }
+        &__Parrafo{
+            color:rgb(184, 178, 178) ;
+            font-size: 15px;
+            font-family: "OriginTech personal use";
+            text-align: left;
+        }
+}
+
+.MainPlacas{
+    display: flex;
+    flex-direction: column;
+    &__Titulo{
+        font-family:"OriginTech personal use" ; 
+        color: darkgrey;
+        font-size: 40px;
+        margin-left: 32%;
+    }
+    &__TituloDos{
+        font-family:"OriginTech personal use" ; 
+        color: darkgrey;
+        font-size: 30px;
+        margin-left: 25%;
+    }
+    &__SubtituloUno{
+        font-family: "OriginTech personal use";
+        color: rgb(184, 178, 178);
+        font-size: 20px;
+        margin-left: 15%;
+    }
+    &__SubtituloDos{
+        font-family: "OriginTech personal use";
+        font-size: 15px;
+        margin-left: 15%;
+        
+    }
+    &__Parrafo{
+        font-family: 'Aldrich', sans-serif; 
+        color: darkgrey;
+        width: 100%;
+        font-size: 10px;
+        text-align: left;
+        margin-left: 30px;
+        
+    }
+    &__SeccionUnoImg{
+        margin-left: 10%;
+    }  
+}
+
+.MainContactos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__Carrusel{
+        width: 50%;
+        display: list-item;
+        margin-left: 1%;
+    }
+    &__Titulo{
+
+        margin-left: 20%;
+        
+    }
+    &__input{
+        width: 300px;
+        display: list-item;
+        
+    }
+    &__label{
+        font-size: 20px;
+    }
+    &__CheckBoton{
+        color: rgb(184, 178, 178);
+    }
+}
+
+    }

@@ -1,6 +1,6 @@
 body {
   background-image: url(/Repositorio/imagenes/FondoWeb.jpg);
-  width: 80%; }
+  width: 100%; }
 
 @font-face {
   font-family: "OriginTech personal use";
@@ -53,7 +53,7 @@ body {
     font-family: "OriginTech personal use";
     color: darkgrey; }
   .MainGaleria__Carrusel {
-    width: 40%; }
+    width: 35%; }
   .MainGaleria__Img {
     width: 15%; }
   .MainGaleria__Img:hover {
@@ -129,8 +129,7 @@ body {
 /*Estilo del Pie de Pagina*/
 .Footer {
   display: flex;
-  flex-direction: row;
-  position: absolute;
+  position: relative;
   bottom: 1px;
   width: 100%;
   justify-content: left;
@@ -148,3 +147,149 @@ body {
     color: blanchedalmond; }
   .Footer__ItemListaSN {
     color: blanchedalmond; }
+
+/*Estilo para celulares*/
+@media screen and (max-width: 600px) {
+  .Main {
+    display: flex;
+    flex-direction: column; }
+    .Main__Video {
+      width: 100%; }
+    .Main__Subtitulo, .MainGaleria__Subtitulo, .Procesadores__SubtituloUno, .Procesadores__SubtituloTres {
+      font-family: "OriginTech personal use";
+      color: darkgrey;
+      font-size: 25px; }
+    .Main__Parrafo {
+      color: #69b6b6;
+      font-size: 100%;
+      text-align: justify; }
+  .Encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #211D26;
+    justify-content: space-evenly; }
+    .Encabezado__Img {
+      width: 100%; }
+    .Encabezado__Nav {
+      width: 100%; }
+    .Encabezado__Enlaces {
+      margin-left: 40px;
+      padding: 0;
+      list-style: none; }
+    .Encabezado__Li {
+      display: inline-block; }
+    .Encabezado__A {
+      color: blanchedalmond;
+      text-decoration: none;
+      font-family: "OriginTech personal use";
+      padding-left: 15px; }
+    .Encabezado__A:hover {
+      color: red; }
+  .Footer {
+    display: grid;
+    position: relative;
+    width: 100%; }
+    .Footer__Enlaces {
+      list-style: none; }
+    .Footer__ItemLista {
+      color: blanchedalmond;
+      font-size: 10px; }
+    .Footer__TituloLista {
+      color: blanchedalmond;
+      font-size: 15px; }
+    .Footer__SobreNosotros {
+      list-style: none; }
+    .Footer__TituloSN {
+      color: blanchedalmond;
+      font-size: 15px; }
+    .Footer__ItemListaSN {
+      color: blanchedalmond;
+      font-size: 10px; }
+  .MainGaleria {
+    display: flex;
+    flex-direction: column; }
+    .MainGaleria__Subtitulo {
+      width: 100%;
+      font-size: 30px; }
+    .MainGaleria__SubtituloDos, .MainContactos__label {
+      font-family: "OriginTech personal use";
+      color: darkgrey;
+      width: 100%;
+      font-size: 25px; }
+    .MainGaleria__Carrusel {
+      width: 80%; }
+    .MainGaleria__SeccionImg {
+      align-items: center; }
+    .MainGaleria__Img {
+      width: 75%; }
+    .MainGaleria__Img:hover {
+      transform: scale(1.5, 1.5); }
+  .Procesadores {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .Procesadores__SubtituloUno {
+      width: 100%; }
+    .Procesadores__SubtituloDos {
+      font-family: 'Aldrich', sans-serif;
+      color: darkgrey; }
+    .Procesadores__Tabla {
+      color: #b8b2b2;
+      width: 100%; }
+    .Procesadores__SubtituloTres {
+      width: 100%;
+      font-size: 30px; }
+    .Procesadores__Parrafo {
+      color: #b8b2b2;
+      font-size: 15px;
+      font-family: "OriginTech personal use";
+      text-align: left; }
+  .MainPlacas {
+    display: flex;
+    flex-direction: column; }
+    .MainPlacas__Titulo {
+      font-family: "OriginTech personal use";
+      color: darkgrey;
+      font-size: 40px;
+      margin-left: 32%; }
+    .MainPlacas__TituloDos, .MainContactos__Titulo {
+      font-family: "OriginTech personal use";
+      color: darkgrey;
+      font-size: 30px;
+      margin-left: 25%; }
+    .MainPlacas__SubtituloUno {
+      font-family: "OriginTech personal use";
+      color: #b8b2b2;
+      font-size: 20px;
+      margin-left: 15%; }
+    .MainPlacas__SubtituloDos {
+      font-family: "OriginTech personal use";
+      font-size: 15px;
+      margin-left: 15%; }
+    .MainPlacas__Parrafo {
+      font-family: 'Aldrich', sans-serif;
+      color: darkgrey;
+      width: 100%;
+      font-size: 10px;
+      text-align: left;
+      margin-left: 30px; }
+    .MainPlacas__SeccionUnoImg {
+      margin-left: 10%; }
+  .MainContactos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .MainContactos__Carrusel {
+      width: 50%;
+      display: list-item;
+      margin-left: 1%; }
+    .MainContactos__Titulo {
+      margin-left: 20%; }
+    .MainContactos__input {
+      width: 300px;
+      display: list-item; }
+    .MainContactos__label {
+      font-size: 20px; }
+    .MainContactos__CheckBoton {
+      color: #b8b2b2; } }
